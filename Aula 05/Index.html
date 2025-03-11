@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Princiapais Formatações</h1>
+    <h2>Itálico/Ênfase</h2>
+        <h4>Na frase temos <i>pates em itaico</i> sem semantica com a tag "i" </h4>
+        <h4>Também temos <em> para colocar o texto em ênfase</em> com semantica "em" </h4>
+    <h2>Negrito/ Destaque</h2> 
+        <h4>Parte de texto <b>em negrito</b> com a tag "b"</h4>
+        <h4>Parte do texto <Strong>em destaque</Strong> com a tag "Strong"</h4>
+    <h2>Texto Marcador</h2>
+        <h4>Aqui nos vamos ter <mark>um texto marcado</mark> com a tag "mark" <mark>é a mesma tag com e sem semantiga</mark></h4> 
+        <h4>Aqui esta um <mark style="background: green">texto marcado em verde, usando CSS</mark></h4>
+    <h2>Texto grande e Pequeno</h2>
+        <h4>Fazendo um texto <big> de tamanho grande</big> e <small>um texto de tamnho pequeno</small></h4>
+    <h2>Texto deletado</h2>
+        <h4>Aqui estamos <del>deletando texto com semantica</del></h4>   
+    <h2>Texto inserido</h2>
+        <h4>Nesta frase <u>Inserido sem semantica</u></h4>
+        <h4>Nesta forma ele <ins>está inserido com semantica</ins></h4>
+    <h2>Texto Sobrescrito</h2>
+        <h4>Neste texto vamos demonstrar como colcar um numero elevado n<sup>2</sup></h4> 
+    <h2>Texto Subscrito</h2>
+        <h4>A formula da água pode ser lida como H<sub>2</sub>O</h4> 
+    <h2>Citações</h2> 
+        <h4>Está é uma <q>citação a algo especifico</q></h4> 
+    <h2>Citações Completas</h2>
+        <h4>A sequinte citação vem do livro a divina comedia:
+             <blockquote> "Quando eu me encontrava na metade do caminho de nossa vida, me vi perdido em uma selva escura" </blockquote>
+        </h4>
+    <h2>Abreviações</h2>
+        <h4>Está é a forma de se farma uma abreviação <abbr Title= "Sistema Unico de Saude">SUS</abbr></h4>
+    <h2>Texto Invertido</h2>
+        <h4>Demonstando como é ler em um espelho "Estudando HTML" 
+            <p>
+                <bdo dir="rtl">Estudando HTML</bdo>
+            </p>
+        </h4>
+    <h2>Inserido Treço de Codigo</h2>
+        <h4>Está é a forma de se inserir trechos de outros codigos
+            <pre>
+                <code>
+                    import pandas as pd
+
+# Função para remover outliers com base no método do IQR
+def remove_outliers(df, colunas):
+    for coluna in colunas:
+        Q1 = df[coluna].quantile(0.25)
+        Q3 = df[coluna].quantile(0.75)
+        IQR = Q3 - Q1
+        
+        # Limites inferior e superior para identificar outliers
+        limite_inferior = Q1 - 1.5 * IQR
+        limite_superior = Q3 + 1.5 * IQR
+        
+        # Filtra os dados removendo os outliers
+        df = df[(df[coluna] >= limite_inferior) & (df[coluna] <= limite_superior)]
+    
+    return df
+
+# Exemplo de uso
+# Supondo que você tenha um DataFrame 'df' com uma ou mais colunas numéricas
+df = pd.DataFrame({
+    'A': [1, 2, 3, 4, 100, 6, 7, 8, 9],
+    'B': [10, 11, 12, 13, 1000, 15, 16, 17, 18]
+})
+
+# Colunas que você deseja verificar e remover outliers
+colunas_para_checar = ['A', 'B']
+
+# Remover outliers
+df_sem_outliers = remove_outliers(df, colunas_para_checar)
+
+print(df_sem_outliers)
+
+                </code>
+            </pre>
+        </h4> 
+</body>
+</html>
