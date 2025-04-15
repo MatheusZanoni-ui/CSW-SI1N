@@ -1,0 +1,34 @@
+/*CSS Style */
+body{
+    background-image: linear-gradient(90deg, #0764A4, #11A0E7, #06B1BE);
+}
+main{
+    text-align: left;
+    color: white;
+    box-shadow: 50px 50px 50px #0d77ac; 
+    width: 500px; 
+    padding: 50px;
+    margin: auto;
+    border-radius: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+} 
+h1{
+    color: #0764A4;
+    text-shadow: 1px 1px 1px #8EDEF7;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h2{
+    color: darkcyan;
+    size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    color: black;
+    font-family: cursive;
+}
+
