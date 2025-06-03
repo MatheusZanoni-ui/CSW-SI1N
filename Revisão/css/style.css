@@ -1,0 +1,37 @@
+body {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 3px 3px 3px;
+}
+
+button {
+    background-color: #0d77ac;
+    text-align: center;
+}
+/* Ver do porque a imagem não está aparecendo dentro do conteiner, olhar o git hub do professor pra tentar ver sentido */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0f507d;
+    display: flex;
+}
+
+.container h1 {
+    color: #bbb;
+    text-align: center;
+}
+
+.container #calculadora h1 {
+    color: white;
+    text-align: center; 
+    background-image: url(./imagem/calculadora.jpg);
+}
